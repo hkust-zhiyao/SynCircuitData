@@ -1,0 +1,2107 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.51+41 (git sha1 0c689091e, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+
+-- Running command `read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v; read_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/top.v; hierarchy -check -top top; proc; flatten; opt -full; clean; write_verilog /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/test_flatten_design.v' --
+
+1. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v' to AST representation.
+Generating RTLIL representation for module `\node_10'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v' to AST representation.
+Generating RTLIL representation for module `\node_100'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v' to AST representation.
+Generating RTLIL representation for module `\node_11'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v' to AST representation.
+Generating RTLIL representation for module `\node_12'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v' to AST representation.
+Generating RTLIL representation for module `\node_13'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v' to AST representation.
+Generating RTLIL representation for module `\node_14'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v' to AST representation.
+Generating RTLIL representation for module `\node_15'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v' to AST representation.
+Generating RTLIL representation for module `\node_16'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v' to AST representation.
+Generating RTLIL representation for module `\node_17'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v' to AST representation.
+Generating RTLIL representation for module `\node_18'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v' to AST representation.
+Generating RTLIL representation for module `\node_19'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v' to AST representation.
+Generating RTLIL representation for module `\node_2'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v' to AST representation.
+Generating RTLIL representation for module `\node_20'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v' to AST representation.
+Generating RTLIL representation for module `\node_21'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v' to AST representation.
+Generating RTLIL representation for module `\node_23'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v' to AST representation.
+Generating RTLIL representation for module `\node_25'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v' to AST representation.
+Generating RTLIL representation for module `\node_26'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v' to AST representation.
+Generating RTLIL representation for module `\node_27'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v' to AST representation.
+Generating RTLIL representation for module `\node_28'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v' to AST representation.
+Generating RTLIL representation for module `\node_29'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v' to AST representation.
+Generating RTLIL representation for module `\node_3'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v' to AST representation.
+Generating RTLIL representation for module `\node_30'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v' to AST representation.
+Generating RTLIL representation for module `\node_31'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v' to AST representation.
+Generating RTLIL representation for module `\node_32'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v' to AST representation.
+Generating RTLIL representation for module `\node_33'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v' to AST representation.
+Generating RTLIL representation for module `\node_35'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v' to AST representation.
+Generating RTLIL representation for module `\node_36'.
+Successfully finished Verilog frontend.
+
+28. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v' to AST representation.
+Generating RTLIL representation for module `\node_37'.
+Successfully finished Verilog frontend.
+
+29. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v' to AST representation.
+Generating RTLIL representation for module `\node_39'.
+Successfully finished Verilog frontend.
+
+30. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v' to AST representation.
+Generating RTLIL representation for module `\node_4'.
+Successfully finished Verilog frontend.
+
+31. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v' to AST representation.
+Generating RTLIL representation for module `\node_40'.
+Successfully finished Verilog frontend.
+
+32. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v' to AST representation.
+Generating RTLIL representation for module `\node_41'.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v:254: Warning: Identifier `\layer8_6_width1' is implicitly declared.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v:341: Warning: Identifier `\layer19_5_width1' is implicitly declared.
+Successfully finished Verilog frontend.
+
+33. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v' to AST representation.
+Generating RTLIL representation for module `\node_42'.
+Successfully finished Verilog frontend.
+
+34. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v' to AST representation.
+Generating RTLIL representation for module `\node_43'.
+Successfully finished Verilog frontend.
+
+35. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v' to AST representation.
+Generating RTLIL representation for module `\node_44'.
+Successfully finished Verilog frontend.
+
+36. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v' to AST representation.
+Generating RTLIL representation for module `\node_45'.
+Successfully finished Verilog frontend.
+
+37. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v' to AST representation.
+Generating RTLIL representation for module `\node_46'.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v:319: Warning: Identifier `\layer20_wire5_width32' is implicitly declared.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v:319: Warning: Range select out of bounds on signal `\layer20_wire5_width32': Setting result bit to undef.
+Successfully finished Verilog frontend.
+
+38. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v' to AST representation.
+Generating RTLIL representation for module `\node_47'.
+Successfully finished Verilog frontend.
+
+39. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v' to AST representation.
+Generating RTLIL representation for module `\node_48'.
+Successfully finished Verilog frontend.
+
+40. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v' to AST representation.
+Generating RTLIL representation for module `\node_49'.
+Successfully finished Verilog frontend.
+
+41. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v' to AST representation.
+Generating RTLIL representation for module `\node_5'.
+Successfully finished Verilog frontend.
+
+42. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v' to AST representation.
+Generating RTLIL representation for module `\node_50'.
+Successfully finished Verilog frontend.
+
+43. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v' to AST representation.
+Generating RTLIL representation for module `\node_51'.
+Successfully finished Verilog frontend.
+
+44. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v' to AST representation.
+Generating RTLIL representation for module `\node_52'.
+Successfully finished Verilog frontend.
+
+45. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v' to AST representation.
+Generating RTLIL representation for module `\node_53'.
+Successfully finished Verilog frontend.
+
+46. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v' to AST representation.
+Generating RTLIL representation for module `\node_54'.
+Successfully finished Verilog frontend.
+
+47. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v' to AST representation.
+Generating RTLIL representation for module `\node_55'.
+Successfully finished Verilog frontend.
+
+48. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v' to AST representation.
+Generating RTLIL representation for module `\node_56'.
+Successfully finished Verilog frontend.
+
+49. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v' to AST representation.
+Generating RTLIL representation for module `\node_57'.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:46: Warning: Range select out of bounds on signal `\layer1_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:61: Warning: Range select out of bounds on signal `\layer2_wire4_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:77: Warning: Range select out of bounds on signal `\layer3_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:77: Warning: Range select out of bounds on signal `\layer3_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:93: Warning: Range select out of bounds on signal `\layer4_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:93: Warning: Range select out of bounds on signal `\layer4_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:109: Warning: Range select out of bounds on signal `\layer5_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:109: Warning: Range select out of bounds on signal `\layer5_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:125: Warning: Range select out of bounds on signal `\layer6_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:141: Warning: Range select out of bounds on signal `\layer7_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:141: Warning: Range select out of bounds on signal `\layer7_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:157: Warning: Range select out of bounds on signal `\layer8_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:157: Warning: Range select out of bounds on signal `\layer8_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:173: Warning: Range select out of bounds on signal `\layer9_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:173: Warning: Range select out of bounds on signal `\layer9_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:189: Warning: Range select out of bounds on signal `\layer10_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:189: Warning: Range select out of bounds on signal `\layer10_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:205: Warning: Range select out of bounds on signal `\layer11_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:221: Warning: Range select out of bounds on signal `\layer12_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:221: Warning: Range select out of bounds on signal `\layer12_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:237: Warning: Range select out of bounds on signal `\layer13_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:237: Warning: Range select out of bounds on signal `\layer13_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:253: Warning: Range select out of bounds on signal `\layer14_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:253: Warning: Range select out of bounds on signal `\layer14_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:269: Warning: Range select out of bounds on signal `\layer15_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:269: Warning: Range select out of bounds on signal `\layer15_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:285: Warning: Range select out of bounds on signal `\layer16_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:301: Warning: Range select out of bounds on signal `\layer17_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:301: Warning: Range select out of bounds on signal `\layer17_wire3_width5': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:317: Warning: Range select out of bounds on signal `\layer18_wire2_width32': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:317: Warning: Range select out of bounds on signal `\layer18_wire3_width5': Setting result bit to undef.
+Successfully finished Verilog frontend.
+
+50. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v' to AST representation.
+Generating RTLIL representation for module `\node_58'.
+Successfully finished Verilog frontend.
+
+51. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v' to AST representation.
+Generating RTLIL representation for module `\node_59'.
+Successfully finished Verilog frontend.
+
+52. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v' to AST representation.
+Generating RTLIL representation for module `\node_6'.
+Successfully finished Verilog frontend.
+
+53. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v' to AST representation.
+Generating RTLIL representation for module `\node_60'.
+Successfully finished Verilog frontend.
+
+54. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v' to AST representation.
+Generating RTLIL representation for module `\node_61'.
+Successfully finished Verilog frontend.
+
+55. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v' to AST representation.
+Generating RTLIL representation for module `\node_62'.
+Successfully finished Verilog frontend.
+
+56. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v' to AST representation.
+Generating RTLIL representation for module `\node_63'.
+Successfully finished Verilog frontend.
+
+57. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v' to AST representation.
+Generating RTLIL representation for module `\node_64'.
+Successfully finished Verilog frontend.
+
+58. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v' to AST representation.
+Generating RTLIL representation for module `\node_65'.
+Successfully finished Verilog frontend.
+
+59. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v' to AST representation.
+Generating RTLIL representation for module `\node_67'.
+Successfully finished Verilog frontend.
+
+60. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v' to AST representation.
+Generating RTLIL representation for module `\node_68'.
+Successfully finished Verilog frontend.
+
+61. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v' to AST representation.
+Generating RTLIL representation for module `\node_69'.
+Successfully finished Verilog frontend.
+
+62. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v' to AST representation.
+Generating RTLIL representation for module `\node_7'.
+Successfully finished Verilog frontend.
+
+63. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v' to AST representation.
+Generating RTLIL representation for module `\node_70'.
+Successfully finished Verilog frontend.
+
+64. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v' to AST representation.
+Generating RTLIL representation for module `\node_71'.
+Successfully finished Verilog frontend.
+
+65. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v' to AST representation.
+Generating RTLIL representation for module `\node_72'.
+Successfully finished Verilog frontend.
+
+66. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v' to AST representation.
+Generating RTLIL representation for module `\node_73'.
+Successfully finished Verilog frontend.
+
+67. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v' to AST representation.
+Generating RTLIL representation for module `\node_74'.
+Successfully finished Verilog frontend.
+
+68. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v' to AST representation.
+Generating RTLIL representation for module `\node_75'.
+Successfully finished Verilog frontend.
+
+69. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v' to AST representation.
+Generating RTLIL representation for module `\node_76'.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:151: Warning: Range select out of bounds on signal `\layer8_wire3_width2': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:157: Warning: Range select out of bounds on signal `\layer10_wire3_width2': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:163: Warning: Range select out of bounds on signal `\layer7_wire3_width2': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:163: Warning: Range select out of bounds on signal `\layer9_wire3_width2': Setting result bit to undef.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:163: Warning: Range select out of bounds on signal `\layer11_wire3_width2': Setting result bit to undef.
+Successfully finished Verilog frontend.
+
+70. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v' to AST representation.
+Generating RTLIL representation for module `\node_77'.
+Successfully finished Verilog frontend.
+
+71. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v' to AST representation.
+Generating RTLIL representation for module `\node_78'.
+Successfully finished Verilog frontend.
+
+72. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v' to AST representation.
+Generating RTLIL representation for module `\node_79'.
+Successfully finished Verilog frontend.
+
+73. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v' to AST representation.
+Generating RTLIL representation for module `\node_8'.
+Successfully finished Verilog frontend.
+
+74. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v' to AST representation.
+Generating RTLIL representation for module `\node_80'.
+Successfully finished Verilog frontend.
+
+75. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v' to AST representation.
+Generating RTLIL representation for module `\node_81'.
+Successfully finished Verilog frontend.
+
+76. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v' to AST representation.
+Generating RTLIL representation for module `\node_82'.
+Successfully finished Verilog frontend.
+
+77. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v' to AST representation.
+Generating RTLIL representation for module `\node_83'.
+Successfully finished Verilog frontend.
+
+78. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v' to AST representation.
+Generating RTLIL representation for module `\node_84'.
+Successfully finished Verilog frontend.
+
+79. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v' to AST representation.
+Generating RTLIL representation for module `\node_85'.
+Successfully finished Verilog frontend.
+
+80. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v' to AST representation.
+Generating RTLIL representation for module `\node_86'.
+Successfully finished Verilog frontend.
+
+81. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v' to AST representation.
+Generating RTLIL representation for module `\node_87'.
+Successfully finished Verilog frontend.
+
+82. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v' to AST representation.
+Generating RTLIL representation for module `\node_88'.
+Successfully finished Verilog frontend.
+
+83. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v' to AST representation.
+Generating RTLIL representation for module `\node_89'.
+Successfully finished Verilog frontend.
+
+84. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v' to AST representation.
+Generating RTLIL representation for module `\node_9'.
+Successfully finished Verilog frontend.
+
+85. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v' to AST representation.
+Generating RTLIL representation for module `\node_91'.
+/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v:62: Warning: Range [2:0] select out of bounds on signal `\node_57': Setting 1 MSB bits to undef.
+Successfully finished Verilog frontend.
+
+86. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v' to AST representation.
+Generating RTLIL representation for module `\node_92'.
+Successfully finished Verilog frontend.
+
+87. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v' to AST representation.
+Generating RTLIL representation for module `\node_93'.
+Successfully finished Verilog frontend.
+
+88. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v' to AST representation.
+Generating RTLIL representation for module `\node_94'.
+Successfully finished Verilog frontend.
+
+89. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v' to AST representation.
+Generating RTLIL representation for module `\node_96'.
+Successfully finished Verilog frontend.
+
+90. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v' to AST representation.
+Generating RTLIL representation for module `\node_97'.
+Successfully finished Verilog frontend.
+
+91. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v' to AST representation.
+Generating RTLIL representation for module `\node_98'.
+Successfully finished Verilog frontend.
+
+92. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v' to AST representation.
+Generating RTLIL representation for module `\node_99'.
+Successfully finished Verilog frontend.
+
+93. Executing Verilog-2005 frontend: /home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/top.v
+Parsing Verilog input from `/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/top.v' to AST representation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+94. Executing HIERARCHY pass (managing design hierarchy).
+
+94.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \node_100
+Used module:     \node_99
+Used module:     \node_98
+Used module:     \node_97
+Used module:     \node_96
+Used module:     \node_94
+Used module:     \node_93
+Used module:     \node_92
+Used module:     \node_91
+Used module:     \node_89
+Used module:     \node_88
+Used module:     \node_87
+Used module:     \node_86
+Used module:     \node_85
+Used module:     \node_84
+Used module:     \node_83
+Used module:     \node_82
+Used module:     \node_81
+Used module:     \node_80
+Used module:     \node_79
+Used module:     \node_78
+Used module:     \node_77
+Used module:     \node_76
+Used module:     \node_75
+Used module:     \node_74
+Used module:     \node_73
+Used module:     \node_72
+Used module:     \node_71
+Used module:     \node_70
+Used module:     \node_69
+Used module:     \node_68
+Used module:     \node_67
+Used module:     \node_65
+Used module:     \node_64
+Used module:     \node_63
+Used module:     \node_62
+Used module:     \node_61
+Used module:     \node_60
+Used module:     \node_59
+Used module:     \node_58
+Used module:     \node_57
+Used module:     \node_56
+Used module:     \node_55
+Used module:     \node_54
+Used module:     \node_53
+Used module:     \node_52
+Used module:     \node_51
+Used module:     \node_50
+Used module:     \node_49
+Used module:     \node_48
+Used module:     \node_47
+Used module:     \node_46
+Used module:     \node_45
+Used module:     \node_44
+Used module:     \node_43
+Used module:     \node_42
+Used module:     \node_41
+Used module:     \node_40
+Used module:     \node_39
+Used module:     \node_37
+Used module:     \node_36
+Used module:     \node_35
+Used module:     \node_33
+Used module:     \node_32
+Used module:     \node_31
+Used module:     \node_30
+Used module:     \node_29
+Used module:     \node_28
+Used module:     \node_27
+Used module:     \node_26
+Used module:     \node_25
+Used module:     \node_23
+Used module:     \node_21
+Used module:     \node_20
+Used module:     \node_19
+Used module:     \node_18
+Used module:     \node_17
+Used module:     \node_16
+Used module:     \node_15
+Used module:     \node_14
+Used module:     \node_13
+Used module:     \node_12
+Used module:     \node_11
+Used module:     \node_10
+Used module:     \node_9
+Used module:     \node_8
+Used module:     \node_7
+Used module:     \node_6
+Used module:     \node_5
+Used module:     \node_4
+Used module:     \node_3
+Used module:     \node_2
+
+94.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \node_100
+Used module:     \node_99
+Used module:     \node_98
+Used module:     \node_97
+Used module:     \node_96
+Used module:     \node_94
+Used module:     \node_93
+Used module:     \node_92
+Used module:     \node_91
+Used module:     \node_89
+Used module:     \node_88
+Used module:     \node_87
+Used module:     \node_86
+Used module:     \node_85
+Used module:     \node_84
+Used module:     \node_83
+Used module:     \node_82
+Used module:     \node_81
+Used module:     \node_80
+Used module:     \node_79
+Used module:     \node_78
+Used module:     \node_77
+Used module:     \node_76
+Used module:     \node_75
+Used module:     \node_74
+Used module:     \node_73
+Used module:     \node_72
+Used module:     \node_71
+Used module:     \node_70
+Used module:     \node_69
+Used module:     \node_68
+Used module:     \node_67
+Used module:     \node_65
+Used module:     \node_64
+Used module:     \node_63
+Used module:     \node_62
+Used module:     \node_61
+Used module:     \node_60
+Used module:     \node_59
+Used module:     \node_58
+Used module:     \node_57
+Used module:     \node_56
+Used module:     \node_55
+Used module:     \node_54
+Used module:     \node_53
+Used module:     \node_52
+Used module:     \node_51
+Used module:     \node_50
+Used module:     \node_49
+Used module:     \node_48
+Used module:     \node_47
+Used module:     \node_46
+Used module:     \node_45
+Used module:     \node_44
+Used module:     \node_43
+Used module:     \node_42
+Used module:     \node_41
+Used module:     \node_40
+Used module:     \node_39
+Used module:     \node_37
+Used module:     \node_36
+Used module:     \node_35
+Used module:     \node_33
+Used module:     \node_32
+Used module:     \node_31
+Used module:     \node_30
+Used module:     \node_29
+Used module:     \node_28
+Used module:     \node_27
+Used module:     \node_26
+Used module:     \node_25
+Used module:     \node_23
+Used module:     \node_21
+Used module:     \node_20
+Used module:     \node_19
+Used module:     \node_18
+Used module:     \node_17
+Used module:     \node_16
+Used module:     \node_15
+Used module:     \node_14
+Used module:     \node_13
+Used module:     \node_12
+Used module:     \node_11
+Used module:     \node_10
+Used module:     \node_9
+Used module:     \node_8
+Used module:     \node_7
+Used module:     \node_6
+Used module:     \node_5
+Used module:     \node_4
+Used module:     \node_3
+Used module:     \node_2
+Removed 0 unused modules.
+
+95. Executing PROC pass (convert processes to netlists).
+
+95.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+95.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+95.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 92 assignments to connections.
+
+95.4. Executing PROC_INIT pass (extract init attributes).
+
+95.5. Executing PROC_ARST pass (detect async resets in processes).
+
+95.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+95.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\node_99.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v:334$7733'.
+Creating decoders for process `\node_98.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v:41$7592'.
+Creating decoders for process `\node_97.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:203$7579'.
+Creating decoders for process `\node_96.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v:336$7492'.
+Creating decoders for process `\node_94.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v:220$7351'.
+Creating decoders for process `\node_93.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v:161$7294'.
+Creating decoders for process `\node_92.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v:139$7252'.
+Creating decoders for process `\node_91.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v:175$7227'.
+Creating decoders for process `\node_9.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v:104$7178'.
+Creating decoders for process `\node_89.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v:121$7148'.
+Creating decoders for process `\node_88.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v:350$7106'.
+Creating decoders for process `\node_87.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v:355$6966'.
+Creating decoders for process `\node_86.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v:326$6825'.
+Creating decoders for process `\node_85.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v:334$6684'.
+Creating decoders for process `\node_84.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:334$6540'.
+Creating decoders for process `\node_83.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:116$6401'.
+Creating decoders for process `\node_82.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v:322$6386'.
+Creating decoders for process `\node_81.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v:104$6250'.
+Creating decoders for process `\node_80.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v:322$6218'.
+Creating decoders for process `\node_8.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v:270$6079'.
+Creating decoders for process `\node_79.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v:373$6069'.
+Creating decoders for process `\node_78.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v:306$5914'.
+Creating decoders for process `\node_77.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v:274$5813'.
+Creating decoders for process `\node_76.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:207$5749'.
+Creating decoders for process `\node_75.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v:322$5688'.
+Creating decoders for process `\node_74.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v:261$5548'.
+Creating decoders for process `\node_73.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v:161$5537'.
+Creating decoders for process `\node_72.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v:322$5483'.
+Creating decoders for process `\node_71.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v:41$5343'.
+Creating decoders for process `\node_70.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v:79$5331'.
+Creating decoders for process `\node_7.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v:438$5305'.
+Creating decoders for process `\node_69.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v:342$5156'.
+Creating decoders for process `\node_68.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v:322$5004'.
+Creating decoders for process `\node_67.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v:72$4868'.
+Creating decoders for process `\node_65.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v:339$4838'.
+Creating decoders for process `\node_64.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v:322$4697'.
+Creating decoders for process `\node_63.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v:455$4556'.
+Creating decoders for process `\node_62.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v:110$4415'.
+Creating decoders for process `\node_61.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v:378$4376'.
+Creating decoders for process `\node_60.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v:368$4248'.
+Creating decoders for process `\node_6.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v:251$4128'.
+Creating decoders for process `\node_59.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v:306$4030'.
+Creating decoders for process `\node_58.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v:73$3914'.
+Creating decoders for process `\node_57.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:324$3892'.
+Creating decoders for process `\node_56.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v:85$3757'.
+Creating decoders for process `\node_55.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v:148$3732'.
+Creating decoders for process `\node_54.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v:334$3680'.
+Creating decoders for process `\node_53.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v:322$3524'.
+Creating decoders for process `\node_52.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v:334$3378'.
+Creating decoders for process `\node_51.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v:159$3198'.
+Creating decoders for process `\node_50.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v:190$3184'.
+Creating decoders for process `\node_5.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v:344$3106'.
+Creating decoders for process `\node_49.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v:36$2968'.
+Creating decoders for process `\node_48.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v:52$2958'.
+Creating decoders for process `\node_47.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v:346$2955'.
+Creating decoders for process `\node_46.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v:318$2814'.
+Creating decoders for process `\node_45.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v:191$2669'.
+Creating decoders for process `\node_44.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v:148$2609'.
+Creating decoders for process `\node_43.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v:293$2559'.
+Creating decoders for process `\node_42.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v:11$2463'.
+Creating decoders for process `\node_41.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v:343$2461'.
+Creating decoders for process `\node_40.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v:194$2326'.
+Creating decoders for process `\node_4.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v:167$2320'.
+Creating decoders for process `\node_39.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v:322$2270'.
+Creating decoders for process `\node_37.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v:36$2132'.
+Creating decoders for process `\node_36.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v:62$2117'.
+Creating decoders for process `\node_35.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v:43$2099'.
+Creating decoders for process `\node_33.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v:322$2086'.
+Creating decoders for process `\node_32.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v:282$1945'.
+Creating decoders for process `\node_31.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v:190$1822'.
+Creating decoders for process `\node_30.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v:304$1753'.
+Creating decoders for process `\node_3.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v:291$1623'.
+Creating decoders for process `\node_29.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v:322$1506'.
+Creating decoders for process `\node_28.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v:322$1370'.
+Creating decoders for process `\node_27.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v:322$1230'.
+Creating decoders for process `\node_26.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v:11$1095'.
+Creating decoders for process `\node_25.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v:335$1087'.
+Creating decoders for process `\node_23.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v:11$926'.
+Creating decoders for process `\node_21.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v:11$925'.
+Creating decoders for process `\node_20.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v:140$923'.
+Creating decoders for process `\node_2.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v:267$881'.
+Creating decoders for process `\node_19.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v:138$797'.
+Creating decoders for process `\node_18.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v:334$740'.
+Creating decoders for process `\node_17.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v:323$599'.
+Creating decoders for process `\node_16.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v:334$460'.
+Creating decoders for process `\node_15.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v:182$319'.
+Creating decoders for process `\node_14.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v:262$256'.
+Creating decoders for process `\node_13.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v:41$212'.
+Creating decoders for process `\node_12.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v:209$200'.
+Creating decoders for process `\node_11.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v:41$129'.
+Creating decoders for process `\node_100.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v:128$117'.
+Creating decoders for process `\node_10.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v:340$80'.
+
+95.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+95.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\node_99.\node_99' using process `\node_99.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v:334$7733'.
+  created $dff cell `$procdff$7739' with positive edge clock.
+Creating register for signal `\node_98.\node_98' using process `\node_98.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v:41$7592'.
+  created $dff cell `$procdff$7740' with positive edge clock.
+Creating register for signal `\node_97.\node_97' using process `\node_97.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:203$7579'.
+  created $dff cell `$procdff$7741' with positive edge clock.
+Creating register for signal `\node_96.\node_96' using process `\node_96.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v:336$7492'.
+  created $dff cell `$procdff$7742' with positive edge clock.
+Creating register for signal `\node_94.\node_94' using process `\node_94.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v:220$7351'.
+  created $dff cell `$procdff$7743' with positive edge clock.
+Creating register for signal `\node_93.\node_93' using process `\node_93.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v:161$7294'.
+  created $dff cell `$procdff$7744' with positive edge clock.
+Creating register for signal `\node_92.\node_92' using process `\node_92.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v:139$7252'.
+  created $dff cell `$procdff$7745' with positive edge clock.
+Creating register for signal `\node_91.\node_91' using process `\node_91.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v:175$7227'.
+  created $dff cell `$procdff$7746' with positive edge clock.
+Creating register for signal `\node_9.\node_9' using process `\node_9.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v:104$7178'.
+  created $dff cell `$procdff$7747' with positive edge clock.
+Creating register for signal `\node_89.\node_89' using process `\node_89.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v:121$7148'.
+  created $dff cell `$procdff$7748' with positive edge clock.
+Creating register for signal `\node_88.\node_88' using process `\node_88.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v:350$7106'.
+  created $dff cell `$procdff$7749' with positive edge clock.
+Creating register for signal `\node_87.\node_87' using process `\node_87.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v:355$6966'.
+  created $dff cell `$procdff$7750' with positive edge clock.
+Creating register for signal `\node_86.\node_86' using process `\node_86.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v:326$6825'.
+  created $dff cell `$procdff$7751' with positive edge clock.
+Creating register for signal `\node_85.\node_85' using process `\node_85.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v:334$6684'.
+  created $dff cell `$procdff$7752' with positive edge clock.
+Creating register for signal `\node_84.\node_84' using process `\node_84.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:334$6540'.
+  created $dff cell `$procdff$7753' with positive edge clock.
+Creating register for signal `\node_83.\node_83' using process `\node_83.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:116$6401'.
+  created $dff cell `$procdff$7754' with positive edge clock.
+Creating register for signal `\node_82.\node_82' using process `\node_82.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v:322$6386'.
+  created $dff cell `$procdff$7755' with positive edge clock.
+Creating register for signal `\node_81.\node_81' using process `\node_81.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v:104$6250'.
+  created $dff cell `$procdff$7756' with positive edge clock.
+Creating register for signal `\node_80.\node_80' using process `\node_80.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v:322$6218'.
+  created $dff cell `$procdff$7757' with positive edge clock.
+Creating register for signal `\node_8.\node_8' using process `\node_8.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v:270$6079'.
+  created $dff cell `$procdff$7758' with positive edge clock.
+Creating register for signal `\node_79.\node_79' using process `\node_79.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v:373$6069'.
+  created $dff cell `$procdff$7759' with positive edge clock.
+Creating register for signal `\node_78.\node_78' using process `\node_78.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v:306$5914'.
+  created $dff cell `$procdff$7760' with positive edge clock.
+Creating register for signal `\node_77.\node_77' using process `\node_77.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v:274$5813'.
+  created $dff cell `$procdff$7761' with positive edge clock.
+Creating register for signal `\node_76.\node_76' using process `\node_76.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:207$5749'.
+  created $dff cell `$procdff$7762' with positive edge clock.
+Creating register for signal `\node_75.\node_75' using process `\node_75.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v:322$5688'.
+  created $dff cell `$procdff$7763' with positive edge clock.
+Creating register for signal `\node_74.\node_74' using process `\node_74.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v:261$5548'.
+  created $dff cell `$procdff$7764' with positive edge clock.
+Creating register for signal `\node_73.\node_73' using process `\node_73.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v:161$5537'.
+  created $dff cell `$procdff$7765' with positive edge clock.
+Creating register for signal `\node_72.\node_72' using process `\node_72.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v:322$5483'.
+  created $dff cell `$procdff$7766' with positive edge clock.
+Creating register for signal `\node_71.\node_71' using process `\node_71.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v:41$5343'.
+  created $dff cell `$procdff$7767' with positive edge clock.
+Creating register for signal `\node_70.\node_70' using process `\node_70.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v:79$5331'.
+  created $dff cell `$procdff$7768' with positive edge clock.
+Creating register for signal `\node_7.\node_7' using process `\node_7.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v:438$5305'.
+  created $dff cell `$procdff$7769' with positive edge clock.
+Creating register for signal `\node_69.\node_69' using process `\node_69.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v:342$5156'.
+  created $dff cell `$procdff$7770' with positive edge clock.
+Creating register for signal `\node_68.\node_68' using process `\node_68.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v:322$5004'.
+  created $dff cell `$procdff$7771' with positive edge clock.
+Creating register for signal `\node_67.\node_67' using process `\node_67.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v:72$4868'.
+  created $dff cell `$procdff$7772' with positive edge clock.
+Creating register for signal `\node_65.\node_65' using process `\node_65.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v:339$4838'.
+  created $dff cell `$procdff$7773' with positive edge clock.
+Creating register for signal `\node_64.\node_64' using process `\node_64.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v:322$4697'.
+  created $dff cell `$procdff$7774' with positive edge clock.
+Creating register for signal `\node_63.\node_63' using process `\node_63.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v:455$4556'.
+  created $dff cell `$procdff$7775' with positive edge clock.
+Creating register for signal `\node_62.\node_62' using process `\node_62.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v:110$4415'.
+  created $dff cell `$procdff$7776' with positive edge clock.
+Creating register for signal `\node_61.\node_61' using process `\node_61.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v:378$4376'.
+  created $dff cell `$procdff$7777' with positive edge clock.
+Creating register for signal `\node_60.\node_60' using process `\node_60.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v:368$4248'.
+  created $dff cell `$procdff$7778' with positive edge clock.
+Creating register for signal `\node_6.\node_6' using process `\node_6.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v:251$4128'.
+  created $dff cell `$procdff$7779' with positive edge clock.
+Creating register for signal `\node_59.\node_59' using process `\node_59.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v:306$4030'.
+  created $dff cell `$procdff$7780' with positive edge clock.
+Creating register for signal `\node_58.\node_58' using process `\node_58.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v:73$3914'.
+  created $dff cell `$procdff$7781' with positive edge clock.
+Creating register for signal `\node_57.\node_57' using process `\node_57.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:324$3892'.
+  created $dff cell `$procdff$7782' with positive edge clock.
+Creating register for signal `\node_56.\node_56' using process `\node_56.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v:85$3757'.
+  created $dff cell `$procdff$7783' with positive edge clock.
+Creating register for signal `\node_55.\node_55' using process `\node_55.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v:148$3732'.
+  created $dff cell `$procdff$7784' with positive edge clock.
+Creating register for signal `\node_54.\node_54' using process `\node_54.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v:334$3680'.
+  created $dff cell `$procdff$7785' with positive edge clock.
+Creating register for signal `\node_53.\node_53' using process `\node_53.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v:322$3524'.
+  created $dff cell `$procdff$7786' with positive edge clock.
+Creating register for signal `\node_52.\node_52' using process `\node_52.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v:334$3378'.
+  created $dff cell `$procdff$7787' with positive edge clock.
+Creating register for signal `\node_51.\node_51' using process `\node_51.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v:159$3198'.
+  created $dff cell `$procdff$7788' with positive edge clock.
+Creating register for signal `\node_50.\node_50' using process `\node_50.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v:190$3184'.
+  created $dff cell `$procdff$7789' with positive edge clock.
+Creating register for signal `\node_5.\node_5' using process `\node_5.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v:344$3106'.
+  created $dff cell `$procdff$7790' with positive edge clock.
+Creating register for signal `\node_49.\node_49' using process `\node_49.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v:36$2968'.
+  created $dff cell `$procdff$7791' with positive edge clock.
+Creating register for signal `\node_48.\node_48' using process `\node_48.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v:52$2958'.
+  created $dff cell `$procdff$7792' with positive edge clock.
+Creating register for signal `\node_47.\node_47' using process `\node_47.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v:346$2955'.
+  created $dff cell `$procdff$7793' with positive edge clock.
+Creating register for signal `\node_46.\node_46' using process `\node_46.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v:318$2814'.
+  created $dff cell `$procdff$7794' with positive edge clock.
+Creating register for signal `\node_45.\node_45' using process `\node_45.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v:191$2669'.
+  created $dff cell `$procdff$7795' with positive edge clock.
+Creating register for signal `\node_44.\node_44' using process `\node_44.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v:148$2609'.
+  created $dff cell `$procdff$7796' with positive edge clock.
+Creating register for signal `\node_43.\node_43' using process `\node_43.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v:293$2559'.
+  created $dff cell `$procdff$7797' with positive edge clock.
+Creating register for signal `\node_42.\node_42' using process `\node_42.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v:11$2463'.
+  created $dff cell `$procdff$7798' with positive edge clock.
+Creating register for signal `\node_41.\node_41' using process `\node_41.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v:343$2461'.
+  created $dff cell `$procdff$7799' with positive edge clock.
+Creating register for signal `\node_40.\node_40' using process `\node_40.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v:194$2326'.
+  created $dff cell `$procdff$7800' with positive edge clock.
+Creating register for signal `\node_4.\node_4' using process `\node_4.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v:167$2320'.
+  created $dff cell `$procdff$7801' with positive edge clock.
+Creating register for signal `\node_39.\node_39' using process `\node_39.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v:322$2270'.
+  created $dff cell `$procdff$7802' with positive edge clock.
+Creating register for signal `\node_37.\node_37' using process `\node_37.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v:36$2132'.
+  created $dff cell `$procdff$7803' with positive edge clock.
+Creating register for signal `\node_36.\node_36' using process `\node_36.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v:62$2117'.
+  created $dff cell `$procdff$7804' with positive edge clock.
+Creating register for signal `\node_35.\node_35' using process `\node_35.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v:43$2099'.
+  created $dff cell `$procdff$7805' with positive edge clock.
+Creating register for signal `\node_33.\node_33' using process `\node_33.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v:322$2086'.
+  created $dff cell `$procdff$7806' with positive edge clock.
+Creating register for signal `\node_32.\node_32' using process `\node_32.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v:282$1945'.
+  created $dff cell `$procdff$7807' with positive edge clock.
+Creating register for signal `\node_31.\node_31' using process `\node_31.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v:190$1822'.
+  created $dff cell `$procdff$7808' with positive edge clock.
+Creating register for signal `\node_30.\node_30' using process `\node_30.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v:304$1753'.
+  created $dff cell `$procdff$7809' with positive edge clock.
+Creating register for signal `\node_3.\node_3' using process `\node_3.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v:291$1623'.
+  created $dff cell `$procdff$7810' with positive edge clock.
+Creating register for signal `\node_29.\node_29' using process `\node_29.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v:322$1506'.
+  created $dff cell `$procdff$7811' with positive edge clock.
+Creating register for signal `\node_28.\node_28' using process `\node_28.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v:322$1370'.
+  created $dff cell `$procdff$7812' with positive edge clock.
+Creating register for signal `\node_27.\node_27' using process `\node_27.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v:322$1230'.
+  created $dff cell `$procdff$7813' with positive edge clock.
+Creating register for signal `\node_26.\node_26' using process `\node_26.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v:11$1095'.
+  created $dff cell `$procdff$7814' with positive edge clock.
+Creating register for signal `\node_25.\node_25' using process `\node_25.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v:335$1087'.
+  created $dff cell `$procdff$7815' with positive edge clock.
+Creating register for signal `\node_23.\node_23' using process `\node_23.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v:11$926'.
+  created $dff cell `$procdff$7816' with positive edge clock.
+Creating register for signal `\node_21.\node_21' using process `\node_21.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v:11$925'.
+  created $dff cell `$procdff$7817' with positive edge clock.
+Creating register for signal `\node_20.\node_20' using process `\node_20.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v:140$923'.
+  created $dff cell `$procdff$7818' with positive edge clock.
+Creating register for signal `\node_2.\node_2' using process `\node_2.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v:267$881'.
+  created $dff cell `$procdff$7819' with positive edge clock.
+Creating register for signal `\node_19.\node_19' using process `\node_19.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v:138$797'.
+  created $dff cell `$procdff$7820' with positive edge clock.
+Creating register for signal `\node_18.\node_18' using process `\node_18.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v:334$740'.
+  created $dff cell `$procdff$7821' with positive edge clock.
+Creating register for signal `\node_17.\node_17' using process `\node_17.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v:323$599'.
+  created $dff cell `$procdff$7822' with positive edge clock.
+Creating register for signal `\node_16.\node_16' using process `\node_16.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v:334$460'.
+  created $dff cell `$procdff$7823' with positive edge clock.
+Creating register for signal `\node_15.\node_15' using process `\node_15.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v:182$319'.
+  created $dff cell `$procdff$7824' with positive edge clock.
+Creating register for signal `\node_14.\node_14' using process `\node_14.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v:262$256'.
+  created $dff cell `$procdff$7825' with positive edge clock.
+Creating register for signal `\node_13.\node_13' using process `\node_13.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v:41$212'.
+  created $dff cell `$procdff$7826' with positive edge clock.
+Creating register for signal `\node_12.\node_12' using process `\node_12.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v:209$200'.
+  created $dff cell `$procdff$7827' with positive edge clock.
+Creating register for signal `\node_11.\node_11' using process `\node_11.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v:41$129'.
+  created $dff cell `$procdff$7828' with positive edge clock.
+Creating register for signal `\node_100.\node_100' using process `\node_100.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v:128$117'.
+  created $dff cell `$procdff$7829' with positive edge clock.
+Creating register for signal `\node_10.\node_10' using process `\node_10.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v:340$80'.
+  created $dff cell `$procdff$7830' with positive edge clock.
+
+95.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+95.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `node_99.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_99.v:334$7733'.
+Removing empty process `node_98.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_98.v:41$7592'.
+Removing empty process `node_97.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:203$7579'.
+Removing empty process `node_96.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_96.v:336$7492'.
+Removing empty process `node_94.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_94.v:220$7351'.
+Removing empty process `node_93.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_93.v:161$7294'.
+Removing empty process `node_92.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_92.v:139$7252'.
+Removing empty process `node_91.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_91.v:175$7227'.
+Removing empty process `node_9.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_9.v:104$7178'.
+Removing empty process `node_89.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_89.v:121$7148'.
+Removing empty process `node_88.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_88.v:350$7106'.
+Removing empty process `node_87.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_87.v:355$6966'.
+Removing empty process `node_86.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_86.v:326$6825'.
+Removing empty process `node_85.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_85.v:334$6684'.
+Removing empty process `node_84.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:334$6540'.
+Removing empty process `node_83.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:116$6401'.
+Removing empty process `node_82.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_82.v:322$6386'.
+Removing empty process `node_81.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_81.v:104$6250'.
+Removing empty process `node_80.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_80.v:322$6218'.
+Removing empty process `node_8.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_8.v:270$6079'.
+Removing empty process `node_79.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_79.v:373$6069'.
+Removing empty process `node_78.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_78.v:306$5914'.
+Removing empty process `node_77.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_77.v:274$5813'.
+Removing empty process `node_76.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_76.v:207$5749'.
+Removing empty process `node_75.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_75.v:322$5688'.
+Removing empty process `node_74.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_74.v:261$5548'.
+Removing empty process `node_73.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_73.v:161$5537'.
+Removing empty process `node_72.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_72.v:322$5483'.
+Removing empty process `node_71.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_71.v:41$5343'.
+Removing empty process `node_70.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_70.v:79$5331'.
+Removing empty process `node_7.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_7.v:438$5305'.
+Removing empty process `node_69.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_69.v:342$5156'.
+Removing empty process `node_68.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_68.v:322$5004'.
+Removing empty process `node_67.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_67.v:72$4868'.
+Removing empty process `node_65.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_65.v:339$4838'.
+Removing empty process `node_64.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_64.v:322$4697'.
+Removing empty process `node_63.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_63.v:455$4556'.
+Removing empty process `node_62.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v:110$4415'.
+Removing empty process `node_61.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_61.v:378$4376'.
+Removing empty process `node_60.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_60.v:368$4248'.
+Removing empty process `node_6.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_6.v:251$4128'.
+Removing empty process `node_59.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_59.v:306$4030'.
+Removing empty process `node_58.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_58.v:73$3914'.
+Removing empty process `node_57.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_57.v:324$3892'.
+Removing empty process `node_56.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_56.v:85$3757'.
+Removing empty process `node_55.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_55.v:148$3732'.
+Removing empty process `node_54.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_54.v:334$3680'.
+Removing empty process `node_53.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_53.v:322$3524'.
+Removing empty process `node_52.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_52.v:334$3378'.
+Removing empty process `node_51.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_51.v:159$3198'.
+Removing empty process `node_50.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_50.v:190$3184'.
+Removing empty process `node_5.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_5.v:344$3106'.
+Removing empty process `node_49.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_49.v:36$2968'.
+Removing empty process `node_48.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_48.v:52$2958'.
+Removing empty process `node_47.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_47.v:346$2955'.
+Removing empty process `node_46.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_46.v:318$2814'.
+Removing empty process `node_45.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_45.v:191$2669'.
+Removing empty process `node_44.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_44.v:148$2609'.
+Removing empty process `node_43.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_43.v:293$2559'.
+Removing empty process `node_42.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_42.v:11$2463'.
+Removing empty process `node_41.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_41.v:343$2461'.
+Removing empty process `node_40.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_40.v:194$2326'.
+Removing empty process `node_4.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_4.v:167$2320'.
+Removing empty process `node_39.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_39.v:322$2270'.
+Removing empty process `node_37.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_37.v:36$2132'.
+Removing empty process `node_36.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_36.v:62$2117'.
+Removing empty process `node_35.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_35.v:43$2099'.
+Removing empty process `node_33.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_33.v:322$2086'.
+Removing empty process `node_32.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_32.v:282$1945'.
+Removing empty process `node_31.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_31.v:190$1822'.
+Removing empty process `node_30.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_30.v:304$1753'.
+Removing empty process `node_3.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_3.v:291$1623'.
+Removing empty process `node_29.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_29.v:322$1506'.
+Removing empty process `node_28.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_28.v:322$1370'.
+Removing empty process `node_27.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_27.v:322$1230'.
+Removing empty process `node_26.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_26.v:11$1095'.
+Removing empty process `node_25.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v:335$1087'.
+Removing empty process `node_23.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_23.v:11$926'.
+Removing empty process `node_21.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_21.v:11$925'.
+Removing empty process `node_20.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_20.v:140$923'.
+Removing empty process `node_2.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_2.v:267$881'.
+Removing empty process `node_19.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_19.v:138$797'.
+Removing empty process `node_18.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_18.v:334$740'.
+Removing empty process `node_17.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_17.v:323$599'.
+Removing empty process `node_16.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_16.v:334$460'.
+Removing empty process `node_15.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_15.v:182$319'.
+Removing empty process `node_14.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_14.v:262$256'.
+Removing empty process `node_13.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_13.v:41$212'.
+Removing empty process `node_12.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_12.v:209$200'.
+Removing empty process `node_11.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_11.v:41$129'.
+Removing empty process `node_100.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_100.v:128$117'.
+Removing empty process `node_10.$proc$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_10.v:340$80'.
+Cleaned up 0 empty switches.
+
+95.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+Optimizing module node_99.
+Optimizing module node_98.
+Optimizing module node_97.
+<suppressed ~2 debug messages>
+Optimizing module node_96.
+Optimizing module node_94.
+Optimizing module node_93.
+Optimizing module node_92.
+<suppressed ~7 debug messages>
+Optimizing module node_91.
+Optimizing module node_9.
+Optimizing module node_89.
+Optimizing module node_88.
+<suppressed ~4 debug messages>
+Optimizing module node_87.
+<suppressed ~4 debug messages>
+Optimizing module node_86.
+Optimizing module node_85.
+Optimizing module node_84.
+Optimizing module node_83.
+Optimizing module node_82.
+Optimizing module node_81.
+Optimizing module node_80.
+Optimizing module node_8.
+Optimizing module node_79.
+Optimizing module node_78.
+Optimizing module node_77.
+Optimizing module node_76.
+Optimizing module node_75.
+Optimizing module node_74.
+<suppressed ~2 debug messages>
+Optimizing module node_73.
+<suppressed ~3 debug messages>
+Optimizing module node_72.
+Optimizing module node_71.
+<suppressed ~2 debug messages>
+Optimizing module node_70.
+Optimizing module node_7.
+<suppressed ~8 debug messages>
+Optimizing module node_69.
+Optimizing module node_68.
+Optimizing module node_67.
+Optimizing module node_65.
+Optimizing module node_64.
+Optimizing module node_63.
+Optimizing module node_62.
+Optimizing module node_61.
+Optimizing module node_60.
+Optimizing module node_6.
+Optimizing module node_59.
+Optimizing module node_58.
+Optimizing module node_57.
+<suppressed ~13 debug messages>
+Optimizing module node_56.
+Optimizing module node_55.
+Optimizing module node_54.
+Optimizing module node_53.
+Optimizing module node_52.
+<suppressed ~80 debug messages>
+Optimizing module node_51.
+Optimizing module node_50.
+Optimizing module node_5.
+Optimizing module node_49.
+Optimizing module node_48.
+Optimizing module node_47.
+Optimizing module node_46.
+Optimizing module node_45.
+Optimizing module node_44.
+<suppressed ~1 debug messages>
+Optimizing module node_43.
+Optimizing module node_42.
+Optimizing module node_41.
+Optimizing module node_40.
+Optimizing module node_4.
+Optimizing module node_39.
+Optimizing module node_37.
+Optimizing module node_36.
+Optimizing module node_35.
+Optimizing module node_33.
+Optimizing module node_32.
+Optimizing module node_31.
+<suppressed ~14 debug messages>
+Optimizing module node_30.
+Optimizing module node_3.
+Optimizing module node_29.
+Optimizing module node_28.
+Optimizing module node_27.
+Optimizing module node_26.
+Optimizing module node_25.
+Optimizing module node_23.
+Optimizing module node_21.
+Optimizing module node_20.
+Optimizing module node_2.
+Optimizing module node_19.
+Optimizing module node_18.
+Optimizing module node_17.
+Optimizing module node_16.
+Optimizing module node_15.
+Optimizing module node_14.
+Optimizing module node_13.
+<suppressed ~2 debug messages>
+Optimizing module node_12.
+Optimizing module node_11.
+<suppressed ~3 debug messages>
+Optimizing module node_100.
+<suppressed ~3 debug messages>
+Optimizing module node_10.
+
+96. Executing FLATTEN pass (flatten design).
+Deleting now unused module node_99.
+Deleting now unused module node_98.
+Deleting now unused module node_97.
+Deleting now unused module node_96.
+Deleting now unused module node_94.
+Deleting now unused module node_93.
+Deleting now unused module node_92.
+Deleting now unused module node_91.
+Deleting now unused module node_9.
+Deleting now unused module node_89.
+Deleting now unused module node_88.
+Deleting now unused module node_87.
+Deleting now unused module node_86.
+Deleting now unused module node_85.
+Deleting now unused module node_84.
+Deleting now unused module node_83.
+Deleting now unused module node_82.
+Deleting now unused module node_81.
+Deleting now unused module node_80.
+Deleting now unused module node_8.
+Deleting now unused module node_79.
+Deleting now unused module node_78.
+Deleting now unused module node_77.
+Deleting now unused module node_76.
+Deleting now unused module node_75.
+Deleting now unused module node_74.
+Deleting now unused module node_73.
+Deleting now unused module node_72.
+Deleting now unused module node_71.
+Deleting now unused module node_70.
+Deleting now unused module node_7.
+Deleting now unused module node_69.
+Deleting now unused module node_68.
+Deleting now unused module node_67.
+Deleting now unused module node_65.
+Deleting now unused module node_64.
+Deleting now unused module node_63.
+Deleting now unused module node_62.
+Deleting now unused module node_61.
+Deleting now unused module node_60.
+Deleting now unused module node_6.
+Deleting now unused module node_59.
+Deleting now unused module node_58.
+Deleting now unused module node_57.
+Deleting now unused module node_56.
+Deleting now unused module node_55.
+Deleting now unused module node_54.
+Deleting now unused module node_53.
+Deleting now unused module node_52.
+Deleting now unused module node_51.
+Deleting now unused module node_50.
+Deleting now unused module node_5.
+Deleting now unused module node_49.
+Deleting now unused module node_48.
+Deleting now unused module node_47.
+Deleting now unused module node_46.
+Deleting now unused module node_45.
+Deleting now unused module node_44.
+Deleting now unused module node_43.
+Deleting now unused module node_42.
+Deleting now unused module node_41.
+Deleting now unused module node_40.
+Deleting now unused module node_4.
+Deleting now unused module node_39.
+Deleting now unused module node_37.
+Deleting now unused module node_36.
+Deleting now unused module node_35.
+Deleting now unused module node_33.
+Deleting now unused module node_32.
+Deleting now unused module node_31.
+Deleting now unused module node_30.
+Deleting now unused module node_3.
+Deleting now unused module node_29.
+Deleting now unused module node_28.
+Deleting now unused module node_27.
+Deleting now unused module node_26.
+Deleting now unused module node_25.
+Deleting now unused module node_23.
+Deleting now unused module node_21.
+Deleting now unused module node_20.
+Deleting now unused module node_2.
+Deleting now unused module node_19.
+Deleting now unused module node_18.
+Deleting now unused module node_17.
+Deleting now unused module node_16.
+Deleting now unused module node_15.
+Deleting now unused module node_14.
+Deleting now unused module node_13.
+Deleting now unused module node_12.
+Deleting now unused module node_11.
+Deleting now unused module node_100.
+Deleting now unused module node_10.
+<suppressed ~92 debug messages>
+
+97. Executing OPT pass (performing simple optimizations).
+
+97.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~2989 debug messages>
+
+97.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~1077 debug messages>
+Removed a total of 359 cells.
+
+97.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:107$6440: \node_84_inst.layer5_wire3_width32 -> { \node_84_inst.layer5_wire3_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:120$6444: \node_84_inst.layer6_wire1_width32 -> { \node_84_inst.layer6_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:135$6450: \node_84_inst.layer7_wire1_width32 -> { \node_84_inst.layer7_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:137$6452: \node_84_inst.layer7_wire3_width32 -> { \node_84_inst.layer7_wire3_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:122$6446: \node_84_inst.layer6_wire3_width32 -> { \node_84_inst.layer6_wire3_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:105$6438: \node_84_inst.layer5_wire1_width32 -> { \node_84_inst.layer5_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:216$6486: \node_84_inst.layer12_wire1_width32 -> { \node_84_inst.layer12_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:231$6492: \node_84_inst.layer13_wire1_width32 -> { \node_84_inst.layer13_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:201$6480: \node_84_inst.layer11_wire1_width32 -> { \node_84_inst.layer11_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:262$6505: \node_84_inst.layer15_wire1_width32 -> { \node_84_inst.layer15_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:278$6512: \node_84_inst.layer16_wire1_width32 -> { \node_84_inst.layer16_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:294$6519: \node_84_inst.layer17_wire1_width32 -> { \node_84_inst.layer17_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:310$6526: \node_84_inst.layer18_wire1_width32 -> { \node_84_inst.layer18_wire1_width32 [31:1] 1'1 }
+      Replacing known input bits on port A of cell $flatten\node_83_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6400: { \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 \node_83_inst.layer13_wire1_width1 } -> 0
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:248$6500.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:248$6500.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:263$6506.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:263$6506.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:283$6517.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:283$6517.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:298$6523.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:298$6523.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:313$6529.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:313$6529.
+    dead port 1/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:330$6537.
+    dead port 2/2 on $mux $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:330$6537.
+Removed 12 multiplexer ports.
+<suppressed ~170 debug messages>
+
+97.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $flatten\node_97_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:198$7574:
+      Old ports: A=$flatten\node_97_inst.$or$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:198$7573_Y, B=\node_97_inst.layer19_wire2_width32, Y=$flatten\node_97_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:198$7574_Y
+      New ports: A=$auto$opt_expr.cc:205:group_cell_inputs$9172, B=$flatten\node_97_inst.$and$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:191$7569_Y [4:0], Y=$flatten\node_97_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:198$7574_Y [4:0]
+      New connections: $flatten\node_97_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:198$7574_Y [31:5] = $flatten\node_97_inst.$and$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_97.v:191$7569_Y [31:5]
+    Consolidated identical input bits for $mux cell $flatten\node_83_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6400:
+      Old ports: A=0, B=$flatten\node_83_inst.$extend$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6399_Y, Y=$flatten\node_83_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6400_Y
+      New ports: A=1'0, B=$auto$opt_expr.cc:205:group_cell_inputs$9070, Y=$flatten\node_83_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6400_Y [0]
+      New connections: $flatten\node_83_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_83.v:114$6400_Y [31:1] = 31'0000000000000000000000000000000
+  Optimizing cells in module \top.
+Performed a total of 2 changes.
+
+97.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+97.6. Executing OPT_SHARE pass.
+
+97.7. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\node_83_inst.$procdff$7754 ($dff) from module top (D = $auto$opt_expr.cc:205:group_cell_inputs$9070, Q = \node_83_inst.node_83 [0], rval = 1'0).
+Setting constant 0-bit at position 0 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 1 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 2 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 3 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 4 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 5 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 6 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 7 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 8 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 9 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 10 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 11 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 12 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 13 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 14 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 15 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 16 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 17 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 18 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 19 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 20 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 21 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 22 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 23 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 24 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 25 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 26 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 27 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 28 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 29 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 30 on $auto$ff.cc:266:slice$9426 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_73_inst.$procdff$7765 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\node_57_inst.$procdff$7782 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_57_inst.$procdff$7782 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_41_inst.$procdff$7799 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_27_inst.$procdff$7813 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_9_inst.$procdff$7747 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_7_inst.$procdff$7769 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_2_inst.$procdff$7819 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\node_92_inst.$procdff$7745 ($dff) from module top.
+
+97.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 1717 unused cells and 10052 unused wires.
+<suppressed ~3411 debug messages>
+
+97.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~1801 debug messages>
+
+97.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $flatten\node_84_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_84.v:60$6420: { \node_16_inst.layer1_wire6_width1 \node_16_inst.layer1_wire7_width1 } -> { \node_16_inst.layer1_wire6_width1 1'1 }
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~130 debug messages>
+
+97.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+97.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~57 debug messages>
+Removed a total of 19 cells.
+
+97.14. Executing OPT_SHARE pass.
+
+97.15. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_15_inst.$procdff$7824 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_19_inst.$procdff$7820 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_31_inst.$procdff$7808 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_52_inst.$procdff$7787 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\node_74_inst.$procdff$7764 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_76_inst.$procdff$7762 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\node_88_inst.$procdff$7749 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_94_inst.$procdff$7743 ($dff) from module top.
+
+97.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 171 unused cells and 676 unused wires.
+<suppressed ~358 debug messages>
+
+97.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~582 debug messages>
+
+97.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~129 debug messages>
+
+97.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+    New input vector for $reduce_or cell $flatten\node_62_inst.$reduce_or$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_62.v:45$4390: { $auto$opt_expr.cc:205:group_cell_inputs$10506 \node_4_inst.node_4 }
+  Optimizing cells in module \top.
+Performed a total of 1 changes.
+
+97.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+97.22. Executing OPT_SHARE pass.
+
+97.23. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 1-bit at position 2 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 3 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 4 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 5 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 6 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 7 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 8 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 9 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 10 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 11 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 12 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 13 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 14 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 15 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 17 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 18 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 19 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 20 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 21 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 22 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 23 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 24 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 25 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 26 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 27 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 28 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 29 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 30 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 31 on $flatten\node_35_inst.$procdff$7805 ($dff) from module top.
+Setting constant 1-bit at position 0 on $flatten\node_39_inst.$procdff$7802 ($dff) from module top.
+Setting constant 1-bit at position 1 on $flatten\node_39_inst.$procdff$7802 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 2 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 3 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 4 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 5 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 6 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 7 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 8 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 9 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 10 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 11 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 12 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 13 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 14 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 15 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 16 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 17 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 18 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 19 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 20 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 21 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 22 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 23 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 24 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 25 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 26 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 27 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 28 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 29 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 30 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 31 on $flatten\node_49_inst.$procdff$7791 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_59_inst.$procdff$7780 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_59_inst.$procdff$7780 ($dff) from module top.
+Setting constant 0-bit at position 0 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 2 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 3 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 4 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 5 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 6 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 7 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 8 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 9 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 10 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 11 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 12 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 13 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 14 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 15 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 16 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 17 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 18 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 19 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 20 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 21 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 22 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 23 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 24 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 25 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 26 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 27 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 28 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 29 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 30 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+Setting constant 1-bit at position 31 on $flatten\node_71_inst.$procdff$7767 ($dff) from module top.
+
+97.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 3 unused cells and 161 unused wires.
+<suppressed ~7 debug messages>
+
+97.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~4433 debug messages>
+
+97.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~127 debug messages>
+
+97.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $flatten\node_25_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v:28$934:
+      Old ports: A=32'11111111111111111111111111111100, B={ 15'111111111111111 \node_35_inst.node_35 [16] 14'11111111111111 \node_35_inst.node_35 [1:0] }, Y=\node_25_inst.layer1_wire7_width32
+      New ports: A=3'100, B={ \node_35_inst.node_35 [16] \node_35_inst.node_35 [1:0] }, Y={ \node_25_inst.layer1_wire7_width32 [16] \node_25_inst.layer1_wire7_width32 [1:0] }
+      New connections: { \node_25_inst.layer1_wire7_width32 [31:17] \node_25_inst.layer1_wire7_width32 [15:2] } = 29'11111111111111111111111111111
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $flatten\node_25_inst.$ternary$/home/sliudx/project/rtl_aug/nips-circuitgen/58-gen/results/valid_0/new_VexRiscvSmallestNoCsr_cone_0/node_25.v:44$942:
+      Old ports: A=\node_17_inst.layer1_wire4_width32, B=\node_25_inst.layer1_wire7_width32, Y=\node_25_inst.layer2_wire7_width32
+      New ports: A={ \node_35_inst.node_35 [16] 2'00 }, B={ \node_25_inst.layer1_wire7_width32 [16] \node_25_inst.layer1_wire7_width32 [1:0] }, Y={ \node_25_inst.layer2_wire7_width32 [16] \node_25_inst.layer2_wire7_width32 [1:0] }
+      New connections: { \node_25_inst.layer2_wire7_width32 [31:17] \node_25_inst.layer2_wire7_width32 [15:2] } = 29'11111111111111111111111111111
+  Optimizing cells in module \top.
+Performed a total of 2 changes.
+
+97.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~1359 debug messages>
+Removed a total of 453 cells.
+
+97.30. Executing OPT_SHARE pass.
+
+97.31. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 1 on $flatten\node_37_inst.$procdff$7803 ($dff) from module top.
+Setting constant 0-bit at position 1 on $flatten\node_42_inst.$procdff$7798 ($dff) from module top.
+
+97.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 119 unused cells and 3364 unused wires.
+<suppressed ~143 debug messages>
+
+97.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~1069 debug messages>
+
+97.34. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~126 debug messages>
+
+97.36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+97.37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~174 debug messages>
+Removed a total of 58 cells.
+
+97.38. Executing OPT_SHARE pass.
+
+97.39. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 1-bit at position 2 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 3 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 4 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 5 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 6 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 7 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 8 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 9 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 10 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 11 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 12 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 13 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 14 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 15 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 16 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 17 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 18 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 19 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 20 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 21 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 22 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 23 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 24 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 25 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 26 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 27 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 28 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 29 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 30 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 31 on $flatten\node_63_inst.$procdff$7775 ($dff) from module top.
+Setting constant 1-bit at position 2 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 3 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 4 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 5 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 6 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 7 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 8 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 9 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 10 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 11 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 12 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 13 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 14 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 15 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 17 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 18 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 19 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 20 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 21 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 22 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 23 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 24 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 25 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 26 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 27 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 28 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 29 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 30 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 31 on $flatten\node_68_inst.$procdff$7771 ($dff) from module top.
+Setting constant 1-bit at position 2 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 3 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 4 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 5 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 6 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 7 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 8 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 9 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 10 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 11 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 12 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 13 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 14 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 15 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 17 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 18 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 19 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 20 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 21 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 22 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 23 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 24 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 25 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 26 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 27 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 28 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 29 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 30 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+Setting constant 1-bit at position 31 on $flatten\node_69_inst.$procdff$7770 ($dff) from module top.
+
+97.40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 116 unused cells and 378 unused wires.
+<suppressed ~117 debug messages>
+
+97.41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~141 debug messages>
+
+97.42. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.43. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~126 debug messages>
+
+97.44. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+97.45. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+97.46. Executing OPT_SHARE pass.
+
+97.47. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 1 on $auto$ff.cc:266:slice$10267 ($dff) from module top.
+
+97.48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 38 unused wires.
+<suppressed ~1 debug messages>
+
+97.49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~5 debug messages>
+
+97.50. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.51. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~126 debug messages>
+
+97.52. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+97.53. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+97.54. Executing OPT_SHARE pass.
+
+97.55. Executing OPT_DFF pass (perform DFF optimizations).
+
+97.56. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+97.57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+97.58. Rerunning OPT passes. (Maybe there is more to do..)
+
+97.59. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~126 debug messages>
+
+97.60. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+97.61. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+97.62. Executing OPT_SHARE pass.
+
+97.63. Executing OPT_DFF pass (perform DFF optimizations).
+
+97.64. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+97.65. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+97.66. Finished OPT passes. (There is nothing left to do.)
+
+98. Executing Verilog backend.
+
+98.1. Executing BMUXMAP pass.
+
+98.2. Executing DEMUXMAP pass.
+Dumping module `\top'.
+
+Warnings: 41 unique messages, 41 total
+End of script. Logfile hash: f066146e97, CPU: user 8.11s system 0.24s, MEM: 169.28 MB peak
+Yosys 0.51+41 (git sha1 0c689091e, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 51% 10x opt_expr (4 sec), 19% 8x opt_clean (1 sec), ...
