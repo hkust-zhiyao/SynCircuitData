@@ -47,7 +47,7 @@ Please install the following Python packages before running the scripts:
 ## Data Generation Pipeline
 
 ### 1. Skeleton Generation
-
+- **Verilog to graph parser:** Please refer to the vlgir parser in [MasterRTL: A Pre-Synthesis PPA Estimation Framework for Any RTL Design](https://github.com/hkust-zhiyao/MasterRTL) to convert Verilog code into CDFG representation.
 - **Location:** `skeleton_gen/`
 - **Model:** The [EDGE](https://github.com/tufts-ml/graph-generation-EDGE) graph diffusion model is trained on real circuit designs.
 - **Training:** Run `train.sh` to train the model.
